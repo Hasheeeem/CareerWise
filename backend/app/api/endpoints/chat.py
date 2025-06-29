@@ -225,8 +225,8 @@ async def test_endpoint():
         "status": "healthy",
         "ai_service_available": AI_SERVICE_AVAILABLE,
         "db_service_available": DB_SERVICE_AVAILABLE,
-        "deepseek_key_configured": bool(os.getenv("DEEPSEEK_API_KEY")),
-        "deepseek_model": os.getenv("DEEPSEEK_MODEL", "deepseek-chat"),
+        "groq_key_configured": bool(os.getenv("GROQ_API_KEY")),
+        "groq_model": os.getenv("GROQ_MODEL", "llama-3.1-8b-instant"),
         "demo_user_id": DEMO_USER_UUID
     }
 

@@ -94,6 +94,28 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.05\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
       },
+      typography: {
+        invert: {
+          css: {
+            '--tw-prose-body': 'rgb(209 213 219)',
+            '--tw-prose-headings': 'rgb(255 255 255)',
+            '--tw-prose-lead': 'rgb(156 163 175)',
+            '--tw-prose-links': 'rgb(79 70 229)',
+            '--tw-prose-bold': 'rgb(255 255 255)',
+            '--tw-prose-counters': 'rgb(156 163 175)',
+            '--tw-prose-bullets': 'rgb(75 85 99)',
+            '--tw-prose-hr': 'rgb(55 65 81)',
+            '--tw-prose-quotes': 'rgb(255 255 255)',
+            '--tw-prose-quote-borders': 'rgb(55 65 81)',
+            '--tw-prose-captions': 'rgb(156 163 175)',
+            '--tw-prose-code': 'rgb(255 255 255)',
+            '--tw-prose-pre-code': 'rgb(209 213 219)',
+            '--tw-prose-pre-bg': 'rgb(31 41 55)',
+            '--tw-prose-th-borders': 'rgb(55 65 81)',
+            '--tw-prose-td-borders': 'rgb(75 85 99)',
+          },
+        },
+      },
     },
   },
   plugins: [],
