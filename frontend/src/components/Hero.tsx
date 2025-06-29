@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -23,21 +24,73 @@ const Hero: React.FC = () => {
             <span className="block mt-1">No overwhelm.</span>
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="/chat" 
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <Link 
+              to="/chat" 
               className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              Try the Demo Chatbot
+              Try AI Chat
               <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
             
-            <a 
-              href="#how-it-works" 
+            <Link 
+              to="/auth" 
               className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-all duration-300"
             >
-              Learn More
-            </a>
+              <Sparkles className="mr-2 h-5 w-5" />
+              Sign In
+            </Link>
+          </div>
+
+          {/* Feature Quick Access */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+            <Link 
+              to="/auth" 
+              className="p-4 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all group"
+            >
+              <div className="text-center">
+                <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-blue-600 text-sm font-bold">CV</span>
+                </div>
+                <p className="text-sm font-medium text-gray-700">Resume Builder</p>
+              </div>
+            </Link>
+
+            <Link 
+              to="/auth" 
+              className="p-4 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all group"
+            >
+              <div className="text-center">
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-green-200 transition-colors">
+                  <span className="text-green-600 text-sm font-bold">🧠</span>
+                </div>
+                <p className="text-sm font-medium text-gray-700">Assessments</p>
+              </div>
+            </Link>
+
+            <Link 
+              to="/auth" 
+              className="p-4 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all group"
+            >
+              <div className="text-center">
+                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-purple-600 text-sm font-bold">🎤</span>
+                </div>
+                <p className="text-sm font-medium text-gray-700">Interview Prep</p>
+              </div>
+            </Link>
+
+            <Link 
+              to="/auth" 
+              className="p-4 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all group"
+            >
+              <div className="text-center">
+                <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-orange-200 transition-colors">
+                  <span className="text-orange-600 text-sm font-bold">📚</span>
+                </div>
+                <p className="text-sm font-medium text-gray-700">Learning</p>
+              </div>
+            </Link>
           </div>
         </div>
         
